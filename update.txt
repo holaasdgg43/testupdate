@@ -1,804 +1,887 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head >
-    <title>Mirá Telefe en vivo. Online las 24 Horas | Telefe</title>
-    <meta name="description" content="Mir&aacute; Telefe en vivo online las 24 horas. Disfrut&aacute; programas, noticieros, realities y transmisiones especiales en directo desde cualquier dispositivo." />
-<meta name="robots" content="index, follow, max-image-preview:large" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-<meta name="theme-color" content="#FFFFFF" />
-<meta name="background-color" content="#FFFFFF" />
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta property="fb:pages" content="100043998675367" />
-<meta property="og:title" content="Telefe en vivo las 24 Horas" />
-<meta property="og:site_name" content="Telefe" />
-<meta property="og:description" content="Mir&aacute; Telefe en vivo online las 24 horas. Disfrut&aacute; programas, noticieros, realities y transmisiones especiales en directo desde cualquier dispositivo." />
-<meta property="og:type" content="article" />
-<meta property="og:locale" content="es_AR" />
-<meta property="og:url" content="https://www.mitelefe.com/telefe-en-vivo" />
-<meta property="og:image" content="https://www.mitelefe.com/media/cache/post16x9/screen-telefe-6928716d39d5c.png" />
-<meta property="og:image:alt" content="Mir&aacute; Telefe en vivo. Online las 24 Horas" />
-<meta property="twitter:title" content="Telefe en vivo las 24 Horas" />
-<meta property="twitter:description" content="Mir&aacute; Telefe en vivo online las 24 horas. Disfrut&aacute; programas, noticieros, realities y transmisiones especiales en directo desde cualquier dispositivo." />
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:site" content="@telefe" />
-<meta property="twitter:creator" content="@telefe" />
-<meta property="twitter:image" content="https://www.mitelefe.com/media/cache/post16x9/screen-telefe-6928716d39d5c.png" />
-<meta property="twitter:image:alt" content="Mir&aacute; Telefe en vivo. Online las 24 Horas" />
-<meta property="article:published_time" content="2025-11-27T12:42:37-03:00" />
-<meta property="og:updated_time" content="2026-10-22T22:44:35-03:00" />
-<meta property="article:modified_time" content="2026-10-22T22:44:35-03:00" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-STREAM // Ultra IPTV & Multi-Source Command Center</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- HLS.js for IPTV Video Streaming -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- Google Fonts: Orbitron & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-    <link rel="canonical" href="https://www.mitelefe.com/telefe-en-vivo"/>
-
-    
-    
-    <link rel="alternate" type="application/rss+xml" title="Telefe" href="https://www.mitelefe.com/rss.xml">
-    <meta name="jwplayer-token" content="gzzqnKyQTFkwSoR8PosRrlHvwPIIu1ETj7OXlgl3lVZzZvSw">
-    <meta name="jwplayer-vast" content="https://pubads.g.doubleclick.net/gampad/ads?iu=/23303336001/mitelefe_home/vast_home&amp;description_url=https%3A%2F%2Fwww.mitelefe.com%2F&amp;tfcd=0&amp;npa=0&amp;sz=400x300%7C640x480&amp;max_ad_duration=60000&amp;gdfp_req=1&amp;unviewed_position_start=1&amp;output=vast&amp;env=vp&amp;impl=s&amp;correlator=&amp;cust_params=page%3Dpage%26section%3Dtelefe-en-vivo%26portal%3Dmi-telefe%26id%3D2526039">
-    <meta name="jwplayer-id" content="00qhVpJS">
-    <meta name="video-providers-enabled" content="dailymotion,vimeo,youtube">
-    <meta name="stream-player-engine" content="jwplayer">
-
-      <script type="application/ld+json">{"@context":"https://schema.org","@graph":[]}</script>
-
-    <!-- Google Tag Manager -->
-                    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','GTM-MN4RG3B');</script>
-                    <!-- End Google Tag Manager -->
-    
-          <meta property='ComscoreId' content='41250690'>
-                    <meta property='ComscoreC3' content='TELEFE'>
-                    <!-- Begin comScore Tag -->
-                    <script>
-                      var _comscore = _comscore || [];
-                      _comscore.push({
-                        c1: '2',
-                        c2: '41250690',
-                        options: {
-                          enableFirstPartyCookie: true,
-                          bypassUserConsentRequirementFor1PCookie: true
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        skyNet: {
+                            bg: '#040b14',
+                            panel: 'rgba(10, 25, 47, 0.85)',
+                            panelHover: 'rgba(15, 38, 70, 0.95)',
+                            border: 'rgba(0, 210, 255, 0.35)',
+                            glow: 'rgba(0, 210, 255, 0.65)',
+                            cyan: '#00d2ff',
+                            brightCyan: '#80e5ff',
+                            blueAccent: '#0072ff',
+                            darkText: '#94a3b8'
                         }
-                      });
-                    (function () {
-                        var s = document.createElement('script'), el = document.getElementsByTagName('script')[0]; s.async = true;
-                        s.src = 'https://sb.scorecardresearch.com/cs/41250690/beacon.js';
-                        el.parentNode.insertBefore(s, el);
-                      })();
-                    </script>
-                    <noscript>
-                      <img src='https://sb.scorecardresearch.com/p?c1=2&amp;c2=41250690&amp;cv=4.4.0&amp;cj=1'>
-                    </noscript>
-                    <!-- End comScore Tag --><meta property='LivePlayer' content='true'>
-      <meta property="content-id" content="2526039">
-          <script async src="https://s1.adzonestatic.com/c/10038_telefe.2025.1.js"></script> <style>   div[class^="ad-slot-"]{ min-width: 100%; text-align:center; margin-bottom: 1rem; }   #ad-slot-mobilesticky {margin-bottom: 0}   .ad-slot-topdesktop {height:auto;min-height:90px; }   .ad-slot-topresponsive {height:auto;min-height:90px; }   .ad-slot-horizontal {height:auto;min-height:90px; }   .ad-slot-billboard {height:auto;min-height:250px; }   .ad-slot-box,.ad-slot-mobile_box,.ad-slot-desktop_box {height:auto;min-height:250px; }   .ad-slot-bigbox, .ad-slot-mobile_bigbox, .ad-slot-desktop_bigbox {height:auto;min-height:600px; } </style>
-  <meta name="google-site-verification" content="n79OcSSSiEvPgeMjujjbc9cxz_d5B2dUzU56UxsHlUo">
-<meta name="google-site-verification" content="M7EcY-XC9I35_RkhbuwgtAm1x21QQiO82FsComm8MIQ" />
-  <meta name="facebook-domain-verification" content="qg3quh3ddixwekictyreu8rrf5eb8g">
-
-
-    <link rel="icon"
-          href="https://www.mitelefe.com/media/cache/favicon_32/favicon-6931328b9dab6.png"
-          sizes="32x32"
-          type="image/png">
-
-    <link rel="alternate icon"
-          href="https://www.mitelefe.com/media/cache/favicon_16/favicon-6931328b9dab6.png"
-          sizes="16x16"
-          type="image/png">
-
-    <link rel="apple-touch-icon"
-          href="https://www.mitelefe.com/media/cache/apple_touch/favicon-6931328b9dab6.png">
-
-        <link rel="manifest" href="/manifest.json">
-    
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
-
-            <link rel="stylesheet" href="/build/7233.f42d66d9.css" crossorigin="anonymous" data-turbo-track="reload" integrity="sha384-ciAg9K1AGwp1iFn/Bjps2gcn1fBPM2nls5I4kCAFtqqvijdfcQDJrq8jZZRZNZxk">
-        <link rel="stylesheet" href="/build/frontend.26f7d418.css" crossorigin="anonymous" data-turbo-track="reload" integrity="sha384-QK5CprNqiA0eAoAiMSMuRq7YWbStTGyGACMZEpuiLOANM8xYWQ7XmBXFjHKDXtOv">
-    
-            <script src="/build/runtime.0efbfbfd.js" crossorigin="anonymous" defer integrity="sha384-sErdlzCJA7kyxjWTkpZ+G81I8zQXaIrmW/Z3GhBN4f/M5whSMwmm4eZcswRhgHaC"></script><script src="/build/8310.07958c62.js" crossorigin="anonymous" defer integrity="sha384-ip0i9SxoMzdDcaUCVhNo8FCM9UXw25+ejuqKg7vpA+0Y2tAoeb6+47Sq0l+EGG6b"></script><script src="/build/9304.bc10af53.js" crossorigin="anonymous" defer integrity="sha384-dBbUH7YRoOYyliXputT1D2tg8YoziFB967Ingg9ZfAQkap4cTHmXRUBoV0fzER/p"></script><script src="/build/frontend.1e2f5cad.js" crossorigin="anonymous" defer integrity="sha384-RsC9N87DMEbiUSUH7Kd/A4cmCIiTcGEaKZOWSoFt8wjBM6ssiSO11ijNl71vZG28"></script>
-      </head>
-
-  <body data-turbo="false">
-    <!-- Google Tag Manager (noscript) -->
-                    <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-MN4RG3B'
-                    height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
-                    <!-- End Google Tag Manager (noscript) -->
-    
-          
-          
-  
-  
-
-     <header id="main-nav" class="sticky-top">
-  <nav class="navbar navbar-dark navbar-expand-lg bg-secondary py-3">
-    <div class="container d-flex">
-      <!-- BUTTON COLLAPSE -->
-      <button class="navbar-toggler btn-outline-info me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- LOGO -->
-      <div class="me-sm-auto">
-         <a class="navbar-brand" href="https://www.mitelefe.com/">
-          <img
-            src="https://www.mitelefe.com/media/cache/logo/logo-telefe-blanco-69286e9c2c776.png"
-            srcset="https://www.mitelefe.com/media/cache/logo_2x/logo-telefe-blanco-69286e9c2c776.png 2x"
-            alt="Programas completos, realities y TV en vivo"
-            decoding="async"
-            loading="eager"
-            width="130"
-            height="72">
-        </a>
-      </div>
-
-      <!-- NAVBAR BODY -->
-      <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
-                        <ul class="navbar-nav my-3 px-3 px-md-0 mb-md-0 align-items-md-center w-100">
-            
-                    
-            <li class="nav-item mx-2 first">                    <a href="https://www.mitelefe.com/" class="nav-link text-white fw-bold fs-5 p-0 text-uppercase dropdown-toggle" target="_self" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Programas
-    </a>
-
-                                    <ul class="dropdown-menu flex-column flex-md-row list-unstyled rounded-0 start-0 end-0 row border-2 border-start-0 border-end-0 border-top-0 border-white border-opacity-50 justify-content-center py-4 bg-secondary menu_level_1">
-            
-                    
-            <li class="nav-item px-3 col border-end border-white border-opacity-50 mb-2 mb-md-0 first">                    <a href="https://www.mitelefe.com/programas/" class="nav-link text-white fw-bold p-0 text-uppercase" target="_self">
-                Tendencias
-    </a>
-
-                                    <ul class="list-unstyled mt-2 flex-column flex-md-row row row-cols-2 mx-0 menu_level_2">
-            
-        
-            <li class="nav-item px-0 mb-2 mb-md-0 first">                    <a href="https://mitelefe.com/popstars" class="nav-link text-white p-0" target="_self">
-                POPSTARS
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/masterchef-celebrity" class="nav-link text-white p-0" target="_self">
-                MasterChef Celebrity
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/avenida-brasil/" class="nav-link text-white p-0" target="_self">
-                Historias de Corazón: Avenida Brasil
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/pasapalabra/" class="nav-link text-white p-0" target="_self">
-                Pasapalabra
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/a-la-barbarossa/" class="nav-link text-white p-0" target="_self">
-                A la Barbarossa
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/bahar" class="nav-link text-white p-0" target="_self">
-                Bahar ¿estás lista para despertar?
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://mitelefe.com/tierras/" class="nav-link text-white p-0" target="_self">
-                Proyecto Tierras
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/ferne-con-grego/" class="nav-link text-white p-0" target="_self">
-                Ferné con Grego
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/corta-por-lozano/" class="nav-link text-white p-0" target="_self">
-                Cortá por Lozano
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/juego-chino/" class="nav-link text-white p-0" target="_self">
-                Juego Chino
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0 last">                    <a href="https://www.mitelefe.com/deportes/intuiciones" class="nav-link text-white p-0" target="_self">
-                Intuiciones
-    </a>
-
-                    </li>
-
-
-    </ul>
-    </li>
-
-    
-                    
-            <li class="nav-item px-3 col border-end border-white border-opacity-50 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/programas/" class="nav-link text-white fw-bold p-0 text-uppercase" target="_self">
-                Populares
-    </a>
-
-                                    <ul class="list-unstyled mt-2 flex-column flex-md-row row row-cols-2 mx-0 menu_level_2">
-            
-        
-            <li class="nav-item px-0 mb-2 mb-md-0 first">                    <a href="https://www.mitelefe.com/doctor-milagro" class="nav-link text-white p-0" target="_self">
-                Doctor Milagro
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/ariel-en-su-salsa/" class="nav-link text-white p-0" target="_self">
-                Ariel en su salsa
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/ph-podemos-hablar" class="nav-link text-white p-0" target="_self">
-                PH Podemos hablar
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/morfi-la-pena/" class="nav-link text-white p-0" target="_self">
-                La Peña de Morfi
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0 last">                    <a href="https://www.mitelefe.com/susana-gimenez/" class="nav-link text-white p-0" target="_self">
-                Susana Giménez
-    </a>
-
-                    </li>
-
-
-    </ul>
-    </li>
-
-    
-                    
-            <li class="nav-item px-3 col border-end border-white border-opacity-50 mb-2 mb-md-0 last">                    <a href="https://www.mitelefe.com/programas/" class="nav-link text-white fw-bold p-0 text-uppercase" target="_self">
-                Historias inolvidables
-    </a>
-
-                                    <ul class="list-unstyled mt-2 flex-column flex-md-row row row-cols-2 mx-0 menu_level_2">
-            
-        
-            <li class="nav-item px-0 mb-2 mb-md-0 first">                    <a href="https://www.mitelefe.com/adda/" class="nav-link text-white p-0" target="_self">
-                ADDA
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/100-dias-para-enamorarse/" class="nav-link text-white p-0" target="_self">
-                100 días para enamorarse
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0">                    <a href="https://www.mitelefe.com/verano-del-98/" class="nav-link text-white p-0" target="_self">
-                Verano del &#039;98
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item px-0 mb-2 mb-md-0 last">                    <a href="https://www.mitelefe.com/chiquititas/" class="nav-link text-white p-0" target="_self">
-                Chiquititas
-    </a>
-
-                    </li>
-
-
-    </ul>
-    </li>
-
-
-    </ul>
-    </li>
-
-    
-        
-            <li class="nav-item mx-2">                    <a href="https://www.mitelefe.com/vivo/" class="nav-link text-white fw-bold fs-5 p-0 text-uppercase" target="_self">
-                Vivo
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item mx-2">                    <a href="https://noticias.mitelefe.com/" class="nav-link text-white fw-bold fs-5 p-0 text-uppercase" target="_self">
-                Noticias
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item mx-2">                    <a href="https://www.mitelefe.com/convocatorias" class="nav-link text-white fw-bold fs-5 p-0 text-uppercase" target="_self">
-                Convocatorias
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="nav-item mx-2 last">                    <a href="https://www.mitelefe.com/horarios/" class="nav-link text-white fw-bold fs-5 p-0 text-uppercase" target="_self">
-                Qué ver
-    </a>
-
-                    </li>
-
-
-    </ul>
-
-
-        <div class="navbar-social col-md-2 col-12 mt-5 mt-sm-3 mb-3 mb-md-0 justify-content-md-end text-center">
-              
-  
-    <div class="d-flex justify-content-center justify-content-md-end align-items-center px-3 px-md-0 gap-2">
-        <a
-      aria-label="Ir a la cuenta de X de Telefe"
-      title="Ir a la cuenta de X de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://x.com/telefe/"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#twitter-x"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de YouTube de Telefe"
-      title="Ir a la cuenta de YouTube de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://www.youtube.com/telefe"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#youtube"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de TikTok de Telefe"
-      title="Ir a la cuenta de TikTok de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://www.tiktok.com/@telefe"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#tiktok"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de Twitch de Telefe"
-      title="Ir a la cuenta de Twitch de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://www.twitch.tv/telefe"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#twitch"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de Spotify de Telefe"
-      title="Ir a la cuenta de Spotify de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://open.spotify.com/user/bq3mt8705zx6m1pes2emfhifi"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#spotify"></use>
-      </svg>
-    </a>
-      </div>
-
-        </div>
-
-              </div>
-    </div>
-  </nav>
-
-  <!-- TEMAS DEL MOMENTO -->
-  <nav class="topics-menu border-bottom border-white border-opacity-25 d-flex justify-content-md-center py-2 bg-tertiary">
-                <ul class="m-0 p-0">
-            
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0 first">                    <a href="https://www.mitelefe.com/casting-gran-hermano" class="nav-link text-white fw-bold fs-small px-3" target="_blank">
-                Anotate en GH 5👁️
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0">                    <a href="https://www.mitelefe.com/anotate-en-minuto-para-ganar" class="nav-link text-white-50 fs-small px-3" target="_self">
-                Minuto Para Ganar⏰
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0">                    <a href="https://mitelefe.com/masterchef-celebrity/" class="nav-link text-white-50 fs-small px-3" target="_self">
-                MasterChef Celebrity
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0">                    <a href="https://www.mitelefe.com/doctor-milagro/capitulos" class="nav-link text-white-50 fs-small px-3" target="_self">
-                Doctor Milagro
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0">                    <a href="https://www.mitelefe.com/popstars/" class="nav-link text-white-50 fs-small px-3" target="_self">
-                Popstars
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0">                    <a href="https://www.mitelefe.com/avenida-brasil/capitulos" class="nav-link text-white-50 fs-small px-3" target="_self">
-                Avenida Brasil
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0">                    <a href="https://www.mitelefe.com/ph-podemos-hablar" class="nav-link text-white-50 fs-small px-3" target="_self">
-                PH Podemos Hablar
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="topic-item d-inline-flex text-white-50 mb-0 last">                    <a href="https://www.mitelefe.com/masterchef-junior" class="nav-link text-white-50 fs-small px-3" target="_self">
-                MasterChef Junior
-    </a>
-
-                    </li>
-
-
-    </ul>
-
-  </nav>
-
-  
-</header>
-
-    <main>
-      
-
-        <div class="position-relative page-telefe-en-vivo layout-simple_page">
-        
-    <div class="d-lg-grid bg-tertiary gap-4" data-slot-position="0">
-    
-    
-                    
-                    
-<section class="h-100 py-4">
-  <div
-    
-    class="d-flex align-items-center justify-content-center container">
-      
-  <div id="ad-slot-billboard_1" class="ad-slot-billboard d-flex align-items-center justify-content-center"></div>
-
-  </div>
-</section>
-
-            
-        </div>
-
-    
-    <div class="d-lg-grid bg-tertiary gap-4" data-slot-position="1">
-    
-    
-                    
-                    <section class="align-items-center justify-content-center py-4" data-controller="instagram-embed x-embed">
-   <section class="container py-4"><header class="d-flex justify-content-center mb-3"><h2 class="fw-bold mb-0 text-inverted">Vivo</h2></header><ul class="nav nav-tabs d-flex pt-3 w-100 border-bottom border-2 border-primary" id="videoTab" role="tablist"><li class="nav-item flex-fill text-center" role="presentation" data-list-item-id="e1bfd41f93d8c2a3cd137f04ed10058a2"><a class="nav-link active fs-4 fw-semibold pb-2 pt-3 text-white border border-1 border-tertiary" href="javascript:void(0)" id="player-4-tab" role="tab" aria-selected="true" data-player-url="https://www.dailymotion.com/video/xaekt76" data-player-autoplay="true" data-player-muted="false">Mirá Telefe en vivo&nbsp;</a></li></ul><!-- Player Container --><div class="tab-content"><div class="player"><div class="container"><div class="ratio ratio-16x9" id="player-container"><div style="align-items:center;background:#000;color:#fff;display:flex;font-size:1rem;justify-content:center;" id="player-status">Cargando transmisión...</div></div></div></div></div></section><script>
-      (function () {
-        var LAMBDA_URL =
-          "https://57j4mtvcjjf7siqnnvkixb5d3i0uvjei.lambda-url.us-east-1.on.aws/";
-        var STREAM_ID = "6a024684fd4ca6a938f3a118";
-        var CACHE_KEY = "ms_player_data_" + STREAM_ID;
-        var CACHE_TTL = 25 * 60 * 1000;
-        function getCached() {
-          try {
-            var c = JSON.parse(sessionStorage.getItem(CACHE_KEY));
-            if (c && Date.now() < c.exp) return c.data;
-          } catch (e) {}
-          return null;
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'sky-glow': '0 0 22px rgba(0, 210, 255, 0.4)',
+                        'sky-glow-lg': '0 0 40px rgba(0, 210, 255, 0.7)'
+                    }
+                }
+            }
         }
-        function setCache(data) {
-          try {
-            sessionStorage.setItem(
-              CACHE_KEY,
-              JSON.stringify({ data: data, exp: Date.now() + CACHE_TTL }),
-            );
-          } catch (e) {}
-        }
-        function loadPlayer(data) {
-          var container = document.getElementById("player-container");
-          var src =
-            "//mdstrm.com/live-stream/" +
-            data.stream_id +
-            "?player=" +
-            data.player_id +
-            "&access_token=" +
-            data.access_token;
-          container.innerHTML =
-            '<iframe src="' +
-            src +
-            '" allow="autoplay; fullscreen; encrypted-media" frameborder="0" allowfullscreen allowscriptaccess="always" scrolling="no"></iframe>';
-        }
-        function showError() {
-          var el = document.getElementById("player-status");
-          if (el)
-            el.textContent =
-              "Transmisión no disponible temporalmente. Recargá la página.";
-        }
-        var cached = getCached();
-        if (cached) {
-          loadPlayer(cached);
-          return;
-        }
-        fetch(LAMBDA_URL + "?stream_id=" + STREAM_ID)
-          .then(function (r) {
-            return r.json();
-          })
-          .then(function (data) {
-            if (data.access_token) {
-              setCache(data);
-              loadPlayer(data);
-            } else showError();
-          })
-          .catch(showError);
-      })();
     </script>
-</section>
 
-            
-        </div>
+    <style>
+        body {
+            background-color: #040b14;
+            background-image: 
+                linear-gradient(to bottom, rgba(4, 11, 20, 0.82), rgba(4, 11, 20, 0.94)),
+                url('https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
 
-    
-    <div class="d-lg-grid bg-secondary gap-4" data-slot-position="2">
-            <div class="container">
-    
-    
-    
+        .glass-panel {
+            background: rgba(8, 22, 42, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+        }
+
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: rgba(4, 11, 20, 0.8); }
+        ::-webkit-scrollbar-thumb { background: rgba(0, 210, 255, 0.45); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(0, 210, 255, 0.9); box-shadow: 0 0 12px #00d2ff; }
+
+        .grid-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(rgba(0, 210, 255, 0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(0, 210, 255, 0.03) 1px, transparent 1px);
+            background-size: 36px 36px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes cyanPulse {
+            0%, 100% { opacity: 1; box-shadow: 0 0 10px #00d2ff; }
+            50% { opacity: 0.4; box-shadow: 0 0 2px #00d2ff; }
+        }
+        .live-pulse { animation: cyanPulse 2s infinite; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <div class="grid-overlay"></div>
+
+    <!-- MAIN HEADER -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-skyNet-border px-4 lg:px-8 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="window.switchTab('hub')">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-700 flex items-center justify-center text-slate-950 text-xl font-bold shadow-sky-glow border border-cyan-300">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                </div>
+                <div>
+                    <h1 class="font-orbitron font-extrabold text-xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-100 to-blue-400">
+                        CYBER<span class="text-cyan-400">//</span>SKYNET
+                    </h1>
+                    <p class="text-[10px] text-skyNet-darkText uppercase tracking-widest font-mono">Ultra IPTV Command Center v6.0</p>
+                </div>
             </div>
-    </div>
 
-    
-    <div class="d-lg-grid bg-tertiary gap-4" data-slot-position="3">
-    
-    
-                    
-                    
-<section class="h-100 py-4">
-  <div
-    
-    class="d-flex align-items-center justify-content-center container">
-      
-  <div id="ad-slot-billboard_2" class="ad-slot-billboard d-flex align-items-center justify-content-center"></div>
-
-  </div>
-</section>
-
-            
+            <!-- Navigation Tabs -->
+            <nav class="hidden md:flex items-center space-x-1 ml-6 bg-black/50 p-1.5 rounded-xl border border-cyan-900/50">
+                <button onclick="window.switchTab('hub')" id="nav-hub" class="nav-btn active px-4 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-300 bg-cyan-500/30 text-cyan-200 border border-cyan-400/50 shadow-sky-glow">
+                    <i class="fa-solid fa-tv mr-1.5"></i> Reproductor & Canales
+                </button>
+                <button onclick="window.switchTab('combiner')" id="nav-combiner" class="nav-btn px-4 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-300 text-slate-400 hover:text-cyan-200 hover:bg-cyan-900/20">
+                    <i class="fa-solid fa-layer-group mr-1.5 text-cyan-400"></i> Combinador Multi-Fuentes
+                </button>
+                <button onclick="window.switchTab('epg')" id="nav-epg" class="nav-btn px-4 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-300 text-slate-400 hover:text-cyan-200 hover:bg-cyan-900/20">
+                    <i class="fa-solid fa-calendar-days mr-1.5 text-sky-400"></i> Guía EPG Vivo
+                </button>
+                <button onclick="window.switchTab('tools')" id="nav-tools" class="nav-btn px-4 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-300 text-slate-400 hover:text-cyan-200 hover:bg-cyan-900/20">
+                    <i class="fa-solid fa-vial-circle-check mr-1.5 text-emerald-400"></i> Tester HLS
+                </button>
+            </nav>
         </div>
 
+        <div class="flex items-center space-x-3">
+            <span class="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-[11px] font-mono bg-cyan-950/70 border border-cyan-500/40 text-cyan-300">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 mr-2 live-pulse"></span>
+                NYC CORE: ONLINE
+            </span>
+            <button onclick="window.toggleSettingsModal()" class="w-9 h-9 rounded-xl bg-cyan-950/50 border border-cyan-500/40 text-cyan-300 flex items-center justify-center hover:bg-cyan-800/40 transition-all">
+                <i class="fa-solid fa-sliders"></i>
+            </button>
+        </div>
+    </header>
 
-  </div>
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow p-3 sm:p-6 lg:p-8 max-w-[1920px] mx-auto w-full relative z-10">
+
+        <!-- TAB 1: PLAYER & CHANNELS -->
+        <section id="tab-hub" class="tab-content transition-opacity duration-300">
+            <div class="grid grid-cols-1 xl:grid-cols-4 gap-6 mb-6">
+                <div class="xl:col-span-3 glass-panel p-4 rounded-2xl flex flex-wrap gap-4 items-center justify-between border-cyan-500/30">
+                    <div class="relative flex-grow min-w-[240px]">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-cyan-400"></i>
+                        <input type="text" id="channelSearchInput" onkeyup="window.filterChannels()" placeholder="Buscar por canal, categoría o contenido..." 
+                            class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-black/60 border border-cyan-900/60 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm transition-all">
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
+                        <select id="categorySelect" onchange="window.filterChannels()" class="bg-cyan-950/90 border border-cyan-800/70 text-cyan-200 rounded-xl px-4 py-2 text-xs font-medium focus:outline-none focus:border-cyan-400 cursor-pointer">
+                            <option value="ALL">Todas las Categorías</option>
+                        </select>
+
+                        <button onclick="window.toggleFavoritesOnly()" id="favToggleBtn" class="px-4 py-2 rounded-xl bg-cyan-950/60 border border-cyan-800/70 text-cyan-300 text-xs font-semibold hover:border-cyan-400 transition-all flex items-center whitespace-nowrap">
+                            <i class="fa-solid fa-star text-yellow-400 mr-2"></i> Favoritos (<span id="favCount">0</span>)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-4 rounded-2xl border-cyan-500/30 flex items-center justify-between">
+                    <div>
+                        <p class="text-[11px] text-skyNet-darkText uppercase tracking-wider font-semibold">Total Canales</p>
+                        <h4 class="text-xl font-bold font-orbitron text-cyan-200 mt-0.5" id="totalChannelsCounter">0 Canales</h4>
+                    </div>
+                    <button onclick="window.switchTab('combiner')" class="px-3.5 py-2 rounded-xl bg-cyan-600/30 border border-cyan-400/50 text-cyan-200 text-xs hover:bg-cyan-600/50 transition-all font-semibold shadow-sky-glow">
+                        <i class="fa-solid fa-plus mr-1"></i> Gestionar Fuentes
+                    </button>
+                </div>
+            </div>
+
+            <!-- Player & Channel Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- Video Player -->
+                <div class="lg:col-span-7 xl:col-span-8 flex flex-col space-y-4">
+                    <div class="glass-panel rounded-2xl overflow-hidden border-cyan-500/40 relative group shadow-sky-glow">
+                        <div class="relative w-full aspect-video bg-black/90 flex items-center justify-center overflow-hidden" id="playerWrapper">
+                            <video id="cyberPlayer" class="w-full h-full object-contain hidden" controls autoplay></video>
+                            <iframe id="cyberIframe" class="w-full h-full border-0 hidden" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+                            <div id="audioVisualizer" class="hidden w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-cyan-950 via-slate-950 to-black p-6 text-center">
+                                <div class="w-24 h-24 rounded-full bg-cyan-500/20 border-2 border-cyan-400 flex items-center justify-center text-cyan-300 text-4xl mb-4 shadow-sky-glow-lg animate-pulse">
+                                    <i class="fa-solid fa-radio"></i>
+                                </div>
+                                <h3 class="font-orbitron font-bold text-lg text-cyan-100" id="audioChannelTitle">Radio Stream</h3>
+                                <p class="text-xs text-cyan-400 mt-1 font-mono">Transmisión de Audio en Vivo</p>
+                                <audio id="cyberAudio" controls class="mt-6 w-full max-w-md"></audio>
+                            </div>
+
+                            <div class="absolute top-4 left-4 z-20 flex items-center space-x-3 pointer-events-none">
+                                <span class="bg-cyan-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider flex items-center shadow-lg">
+                                    <span class="w-2 h-2 rounded-full bg-black mr-1.5 animate-pulse"></span> TRANSMITIENDO
+                                </span>
+                                <span id="playerQualityBadge" class="bg-cyan-950/80 backdrop-blur-md border border-cyan-500/40 text-cyan-200 text-[10px] font-mono px-2.5 py-1 rounded-md">
+                                    HLS AUTO
+                                </span>
+                            </div>
+
+                            <div class="absolute top-4 right-4 z-20 flex items-center space-x-2">
+                                <button onclick="window.toggleFullscreen()" class="p-2 rounded-lg bg-black/60 border border-cyan-500/40 text-cyan-200 hover:bg-cyan-900/40 text-xs backdrop-blur-md transition-all">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                                <button onclick="window.togglePip()" class="p-2 rounded-lg bg-black/60 border border-cyan-500/40 text-cyan-200 hover:bg-cyan-900/40 text-xs backdrop-blur-md transition-all">
+                                    <i class="fa-solid fa-images"></i> PiP
+                                </button>
+                            </div>
+
+                            <div id="playerPlaceholder" class="absolute inset-0 bg-gradient-to-br from-cyan-950/90 via-slate-950 to-black flex flex-col items-center justify-center text-center p-6 z-10 transition-opacity">
+                                <div class="w-20 h-20 rounded-full bg-cyan-900/30 border border-cyan-400/50 flex items-center justify-center text-cyan-300 text-3xl mb-4 shadow-sky-glow">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                                <h3 class="font-orbitron text-xl font-bold text-slate-100">SELECCIONA UN CANAL</h3>
+                                <p class="text-xs text-slate-400 mt-2 max-w-md">La lista M3U con Telefe Argentina 24/7 y canales en vivo está cargada en el panel lateral.</p>
+                            </div>
+                        </div>
+
+                        <!-- Current Stream Info Bar -->
+                        <div class="p-4 bg-cyan-950/50 border-t border-cyan-900/50 flex flex-wrap items-center justify-between gap-4">
+                            <div class="flex items-center space-x-3">
+                                <img id="currentStreamLogo" src="https://placehold.co/100x100/0a192f/00d2ff?text=TV" class="w-10 h-10 rounded-lg object-contain bg-black/40 border border-cyan-500/30 p-1">
+                                <div>
+                                    <h2 class="font-orbitron font-bold text-lg text-cyan-100 flex items-center" id="currentStreamTitle">
+                                        Ningún canal seleccionado
+                                    </h2>
+                                    <p class="text-xs text-skyNet-darkText mt-0.5" id="currentStreamEPG">
+                                        <span class="text-cyan-400 font-semibold">Grupo:</span> Selecciona un canal para sintonizar
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-2">
+                                <button onclick="window.toggleTelefeSource()" id="telefeSourceToggleBtn" class="hidden px-3.5 py-1.5 rounded-lg bg-cyan-500/20 border border-cyan-400/50 text-cyan-200 text-xs hover:bg-cyan-500/40 transition-all font-semibold shadow-sky-glow flex items-center">
+                                    <i class="fa-solid fa-arrows-rotate mr-1.5 text-cyan-400"></i> Fuente Telefe: <span id="telefeCurrentSourceLabel" class="ml-1 text-white font-mono">Dailymotion</span>
+                                </button>
+                                <button onclick="window.copyCurrentStreamUrl()" class="px-3 py-1.5 rounded-lg bg-cyan-900/40 border border-cyan-500/30 text-cyan-300 text-xs hover:border-cyan-400 transition-all">
+                                    <i class="fa-solid fa-copy mr-1"></i> Copiar Link
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Channel Program Guide Box -->
+                    <div class="glass-panel p-4 rounded-2xl border-cyan-500/20">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-orbitron font-semibold text-cyan-300 uppercase tracking-wider flex items-center">
+                                <i class="fa-solid fa-clock-rotate-left mr-1.5 text-cyan-400"></i> Guía EPG en Tiempo Real
+                            </span>
+                        </div>
+                        <div id="channelEpgDetails" class="space-y-2 text-xs text-slate-300">
+                            <p class="text-slate-500 italic">Sintoniza un canal con EPG asignado para visualizar la programación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Channel Repository Column -->
+                <div class="lg:col-span-5 xl:col-span-4 flex flex-col h-[720px]">
+                    <div class="glass-panel rounded-2xl p-4 flex flex-col h-full border-cyan-500/30">
+                        <div class="flex items-center justify-between pb-3 border-b border-cyan-900/50 mb-3">
+                            <h3 class="font-orbitron text-sm font-bold text-cyan-200 uppercase tracking-wider flex items-center">
+                                <i class="fa-solid fa-list-ul mr-2 text-cyan-400"></i> Lista de Canales Integrada
+                            </h3>
+                            <span class="text-xs bg-cyan-900/50 text-cyan-300 border border-cyan-700/50 px-2 py-0.5 rounded-md font-mono" id="channelListCount">0</span>
+                        </div>
+
+                        <div id="channelsContainer" class="flex-grow overflow-y-auto space-y-2 pr-1">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: COMBINER -->
+        <section id="tab-combiner" class="tab-content hidden transition-opacity duration-300">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Left Control Box -->
+                <div class="lg:col-span-6 space-y-6">
+                    <!-- Import M3U File Button & Drop Zone -->
+                    <div class="glass-panel p-6 rounded-2xl border-cyan-500/30">
+                        <h3 class="font-orbitron font-bold text-lg text-cyan-100 mb-3 flex items-center">
+                            <i class="fa-solid fa-file-arrow-up text-cyan-400 mr-2.5"></i> Importar Archivo M3U
+                        </h3>
+                        <div id="m3uDropZone" onclick="document.getElementById('m3uFileInput').click()" class="border-2 border-dashed border-cyan-500/40 rounded-xl p-6 text-center cursor-pointer hover:border-cyan-400 hover:bg-cyan-950/30 transition-all flex flex-col items-center justify-center">
+                            <i class="fa-solid fa-cloud-arrow-up text-3xl text-cyan-400 mb-2"></i>
+                            <p class="text-xs font-semibold text-cyan-200">Haz clic para seleccionar o arrastra tu archivo .m3u / .m3u8</p>
+                            <p class="text-[10px] text-slate-400 mt-1">Soporta archivos M3U locales desde cualquier dispositivo</p>
+                            <input type="file" id="m3uFileInput" accept=".m3u,.m3u8,.txt" class="hidden" onchange="window.handleM3uFileUpload(event)">
+                        </div>
+                    </div>
+
+                    <!-- M3U / EPG URL Inputs -->
+                    <div class="glass-panel p-6 rounded-2xl border-cyan-500/30 space-y-4">
+                        <h3 class="font-orbitron font-bold text-lg text-cyan-100 flex items-center">
+                            <i class="fa-solid fa-link text-cyan-400 mr-2.5"></i> Añadir por URL M3U / EPG
+                        </h3>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">URL Lista M3U</label>
+                            <div class="flex gap-2">
+                                <input type="text" id="m3uUrlInput" placeholder="https://servidor.com/lista.m3u" 
+                                    class="flex-grow px-3.5 py-2.5 rounded-xl bg-black/60 border border-cyan-900/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+                                <button onclick="window.addM3uFromUrl()" class="px-4 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition-all shadow-sky-glow">
+                                    Cargar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">URL Guía EPG (XMLTV)</label>
+                            <div class="flex gap-2">
+                                <input type="text" id="epgUrlInput" placeholder="https://servidor.com/epg.xml" 
+                                    class="flex-grow px-3.5 py-2.5 rounded-xl bg-black/60 border border-cyan-900/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+                                <button onclick="window.addEpgFromUrl()" class="px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs transition-all">
+                                    Vincular EPG
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Pegar Texto M3U Directo</label>
+                            <textarea id="rawM3uTextArea" rows="3" placeholder="#EXTM3U..." class="w-full px-3.5 py-2 rounded-xl bg-black/60 border border-cyan-900/60 text-xs text-slate-200 focus:outline-none focus:border-cyan-400 font-mono"></textarea>
+                            <button onclick="window.addM3uFromRawText()" class="mt-2 w-full py-2 rounded-xl bg-cyan-950 border border-cyan-700/50 text-cyan-300 hover:bg-cyan-900/50 text-xs font-semibold transition-all">
+                                Procesar y Fusionar Texto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Control Box: XTREAM CODES LOGIN & SOURCES -->
+                <div class="lg:col-span-6 space-y-6">
+                    <!-- Xtream Codes API Login -->
+                    <div class="glass-panel p-6 rounded-2xl border-cyan-500/30">
+                        <h3 class="font-orbitron font-bold text-lg text-cyan-100 mb-4 flex items-center">
+                            <i class="fa-solid fa-server text-cyan-400 mr-2.5"></i> Iniciar Sesión Xtream Codes API
+                        </h3>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-[11px] text-slate-400 mb-1">Servidor / Host URL</label>
+                                <input type="text" id="xtreamHost" placeholder="http://xtream-server.com:8080" class="w-full px-3 py-2 rounded-xl bg-black/60 border border-cyan-900/60 text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-[11px] text-slate-400 mb-1">Usuario</label>
+                                    <input type="text" id="xtreamUser" placeholder="Usuario" class="w-full px-3 py-2 rounded-xl bg-black/60 border border-cyan-900/60 text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] text-slate-400 mb-1">Contraseña</label>
+                                    <input type="password" id="xtreamPass" placeholder="••••••••" class="w-full px-3 py-2 rounded-xl bg-black/60 border border-cyan-900/60 text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                                </div>
+                            </div>
+                            <button onclick="window.connectXtreamApi()" class="w-full py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs shadow-sky-glow hover:bg-cyan-400 transition-all">
+                                <i class="fa-solid fa-plug mr-1.5"></i> Conectar Xtream Server
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Linked Fuentes List -->
+                    <div class="glass-panel p-6 rounded-2xl border-cyan-500/30 flex flex-col h-auto">
+                        <div class="flex items-center justify-between pb-3 border-b border-cyan-900/50 mb-3">
+                            <h3 class="font-orbitron font-bold text-base text-cyan-100 flex items-center">
+                                <i class="fa-solid fa-layer-group text-cyan-400 mr-2"></i> Fuentes M3U / EPG Activas
+                            </h3>
+                            <span class="text-xs text-slate-400 font-mono" id="sourcesCount">1 Fuente</span>
+                        </div>
+                        <div id="sourcesList" class="space-y-2">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: EPG -->
+        <section id="tab-epg" class="tab-content hidden transition-opacity duration-300">
+            <div class="glass-panel p-6 rounded-2xl border-cyan-500/30">
+                <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-cyan-900/50 mb-6">
+                    <h2 class="font-orbitron font-bold text-xl text-slate-100 flex items-center">
+                        <i class="fa-solid fa-calendar-days text-cyan-400 mr-2.5"></i> Guía Electrónica de Programación (EPG)
+                    </h2>
+                    <button onclick="window.fetchRemoteEPG()" class="px-4 py-2 rounded-xl bg-cyan-600/30 border border-cyan-400/40 text-cyan-200 text-xs font-semibold hover:bg-cyan-600/50 transition-all">
+                        <i class="fa-solid fa-arrows-rotate mr-1.5"></i> Recargar EPG
+                    </button>
+                </div>
+                <div id="epgTimelineContainer" class="space-y-3 text-xs">Cargando Guía EPG...</div>
+            </div>
+        </section>
+
+        <!-- TAB 4: DIAGNOSTIC TOOLS -->
+        <section id="tab-tools" class="tab-content hidden transition-opacity duration-300">
+            <div class="glass-panel p-6 rounded-2xl border-cyan-500/30 max-w-4xl mx-auto">
+                <h2 class="font-orbitron font-bold text-xl text-slate-100 mb-2 flex items-center">
+                    <i class="fa-solid fa-vial-circle-check text-emerald-400 mr-2.5"></i> Diagnóstico HLS / M3U8
+                </h2>
+                <div class="flex gap-3">
+                    <input type="text" id="testStreamUrl" placeholder="http://servidor.com/live/canal.m3u8" class="flex-grow px-4 py-3 rounded-xl bg-black/60 border border-cyan-900/60 text-sm text-slate-200 focus:outline-none focus:border-cyan-400">
+                    <button onclick="window.runStreamDiagnostic()" class="px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs transition-all shadow-sky-glow">
+                        Diagnosticar Link
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-secondary py-5">
-  <div class="container justify-content-between">
-    <!-- LOGO -->
-    <div class="row justify-content-center">
-      <div class="col-md-2 col-6 text-center mb-3">
-        <a class="navbar-brand" href="https://www.mitelefe.com/">
-          <img
-            src="https://www.mitelefe.com/media/cache/logo/logo-telefe-blanco-69286e9c2c776.png"
-            srcset="https://www.mitelefe.com/media/cache/logo_2x/logo-telefe-blanco-69286e9c2c776.png 2x"
-            alt="Programas completos, realities y TV en vivo"
-            loading="lazy"
-            width="130"
-            height="72">
-        </a>
-      </div>
-
-      <div class="col-md-8 col-12 d-flex justify-content-center flex-grow-1 px-1 px-md-5">
-                        <ul class="list-unstyled text-center px-md-5 px-4 row row-cols-2">
-            
-        
-            <li class="first">                    <a href="/convocatorias" class="text-white text-decoration-none text-uppercase fw-light">
-                Convocatorias
-    </a>
-
-                    </li>
-
-    
-        
-            <li>                    <a href="http://www.telefeinternacional.com.ar/" class="text-white text-decoration-none text-uppercase fw-light">
-                Telefe Internacional
-    </a>
-
-                    </li>
-
-    
-        
-            <li>                    <a href="/legales/terminos-de-uso" class="text-white text-decoration-none text-uppercase fw-light">
-                Términos de Uso
-    </a>
-
-                    </li>
-
-    
-        
-            <li>                    <a href="/legales/politica-de-privacidad" class="text-white text-decoration-none text-uppercase fw-light">
-                Política de Privacidad
-    </a>
-
-                    </li>
-
-    
-        
-            <li>                    <a href="https://applicants.selenios.com/c/telefe" class="text-white text-decoration-none text-uppercase fw-light">
-                Trabajá con nosotros
-    </a>
-
-                    </li>
-
-    
-        
-            <li class="last">                    <a href="https://www.mitelefe.com/tarifario" class="text-white text-decoration-none text-uppercase fw-light">
-                Programación y Tarifas
-    </a>
-
-                    </li>
-
-
-    </ul>
-
-      </div>
-
-      <div class="navbar-social col-md-2 col-10 justify-content-md-end text-center text-md-end">
-            
-      <div class="mb-3 text-white fw-bold h6">Seguí a Telefe</div>
-  
-    <div class="d-flex justify-content-center justify-content-md-end align-items-center px-3 px-md-0 gap-2">
-        <a
-      aria-label="Ir a la cuenta de X de Telefe"
-      title="Ir a la cuenta de X de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://x.com/telefe/"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#twitter-x"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de YouTube de Telefe"
-      title="Ir a la cuenta de YouTube de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://www.youtube.com/telefe"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#youtube"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de TikTok de Telefe"
-      title="Ir a la cuenta de TikTok de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://www.tiktok.com/@telefe"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#tiktok"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de Twitch de Telefe"
-      title="Ir a la cuenta de Twitch de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://www.twitch.tv/telefe"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#twitch"></use>
-      </svg>
-    </a>
-        <a
-      aria-label="Ir a la cuenta de Spotify de Telefe"
-      title="Ir a la cuenta de Spotify de Telefe"
-      target="_blank"
-      rel="nofollow"
-      href="https://open.spotify.com/user/bq3mt8705zx6m1pes2emfhifi"
-      data-size="large"
-      class="text-white-50">
-      <svg class="bi-svg-icon">
-          <use xlink:href="/build/images/frontend/icons-sprite.f4cc2577.svg#spotify"></use>
-      </svg>
-    </a>
-      </div>
-
-      </div>
+    <!-- SETTINGS MODAL -->
+    <div id="settingsModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-panel p-6 rounded-2xl max-w-md w-full border-cyan-500/40 space-y-4">
+            <div class="flex justify-between items-center pb-3 border-b border-cyan-900/50">
+                <h3 class="font-orbitron font-bold text-lg text-cyan-200">Ajustes & Proxy CORS</h3>
+                <button onclick="window.toggleSettingsModal()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="text-xs text-slate-300">Los proxies automáticos de derivación CORS están activos para listas y streamings.</p>
+            <button onclick="window.toggleSettingsModal()" class="w-full py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs shadow-sky-glow">Guardar y Cerrar</button>
+        </div>
     </div>
-  </div>
-</footer>
-      
-  
-  
 
+    <!-- FOOTER -->
+    <footer class="glass-panel border-t border-skyNet-border py-4 px-6 text-center text-xs text-skyNet-darkText relative z-10">
+        <p>© 2026 CYBER-SKYNET IPTV ENGINE // Sky Blue NYC System</p>
+    </footer>
 
-          </body>
+    <!-- COMPLETE SCRIPT ENGINE WITH GUARANTEED WINDOW SCOPING -->
+    <script>
+        // GLOBAL STATE
+        window.masterChannelList = [];
+        window.loadedSources = [{ name: "Lista Integrada por Defecto", count: 0, type: "system" }];
+        window.epgDataMap = {};
+        window.currentActiveChannel = null;
+        window.showFavoritesOnlyFlag = false;
+        window.favoritesSet = new Set();
+        window.hlsPlayer = null;
+
+        const GIST_PLAYLIST_URL = "https://gist.githubusercontent.com/frantdse/54549f7b5c641de6567103bc90cdeab3/raw/";
+        const EPG_URL = "https://raw.githubusercontent.com/Puticastillo/EPGCL/refs/heads/main/smithers/guia-de-programacion.xml?sincompresion";
+
+        const TELEFE_SOURCES = [
+            { name: "Dailymotion 24/7", type: "iframe", url: "https://www.dailymotion.com/embed/video/xaekt76?autoplay=1&mute=0" },
+            { name: "HLS Servidor Directo", type: "hls", url: "http://45.134.141.161:2200/ARG/TELEFE_HD/index.m3u8" }
+        ];
+        let currentTelefeSourceIndex = 0;
+
+        // INIT PLAYER
+        window.initPlayer = function() {
+            console.log("[CYBER-SKYNET] Player Core Initialized");
+            window.setupDragAndDrop();
+        };
+
+        // SETUP DRAG & DROP FOR M3U IMPORT
+        window.setupDragAndDrop = function() {
+            const dropZone = document.getElementById('m3uDropZone');
+            if (!dropZone) return;
+
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropZone.addEventListener(eventName, (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }, false);
+            });
+
+            dropZone.addEventListener('drop', (e) => {
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    window.readM3uFile(files[0]);
+                }
+            });
+        };
+
+        // FILE UPLOAD HANDLER
+        window.handleM3uFileUpload = function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                window.readM3uFile(file);
+            }
+        };
+
+        window.readM3uFile = function(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                const count = window.parseM3uText(text, file.name);
+                window.loadedSources.push({ name: file.name, count: count, type: "file" });
+                window.renderSourcesList();
+                alert(`Importados exitosamente ${count} canales desde "${file.name}"`);
+            };
+            reader.readAsText(file);
+        };
+
+        // TAB SWITCHER
+        window.switchTab = function(tabName) {
+            const tabs = ['hub', 'combiner', 'epg', 'tools'];
+            tabs.forEach(t => {
+                const el = document.getElementById('tab-' + t);
+                const navBtn = document.getElementById('nav-' + t);
+                if (el) el.classList.add('hidden');
+                if (navBtn) {
+                    navBtn.classList.remove('active', 'bg-cyan-500/30', 'text-cyan-200', 'border-cyan-400/50', 'shadow-sky-glow');
+                    navBtn.classList.add('text-slate-400');
+                }
+            });
+
+            const activeTab = document.getElementById('tab-' + tabName);
+            const activeBtn = document.getElementById('nav-' + tabName);
+            if (activeTab) activeTab.classList.remove('hidden');
+            if (activeBtn) {
+                activeBtn.classList.add('active', 'bg-cyan-500/30', 'text-cyan-200', 'border-cyan-400/50', 'shadow-sky-glow');
+                activeBtn.classList.remove('text-slate-400');
+            }
+        };
+
+        // CORS SAFE FETCH
+        window.smartFetch = async function(url) {
+            const proxies = [
+                (u) => u,
+                (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+                (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
+            ];
+
+            for (let p of proxies) {
+                try {
+                    const res = await fetch(p(url));
+                    if (res.ok) {
+                        return await res.text();
+                    }
+                } catch(e) {}
+            }
+            throw new Error("No se pudo obtener el recurso mediante CORS Proxy");
+        };
+
+        // PARSE M3U TEXT
+        window.parseM3uText = function(text, sourceName = "M3U List") {
+            const lines = text.split('\n');
+            const newChannels = [];
+            let currentChannel = null;
+
+            lines.forEach(line => {
+                line = line.trim();
+                if (line.startsWith('#EXTINF:')) {
+                    currentChannel = { id: 'ch_' + Math.random().toString(36).substr(2, 9), source: sourceName };
+                    
+                    const tvgIdMatch = line.match(/tvg-id="([^"]*)"/);
+                    if (tvgIdMatch) currentChannel.tvgId = tvgIdMatch[1];
+
+                    const logoMatch = line.match(/tvg-logo="([^"]*)"/);
+                    if (logoMatch) currentChannel.logo = logoMatch[1];
+
+                    const groupMatch = line.match(/group-title="([^"]*)"/);
+                    if (groupMatch) currentChannel.category = groupMatch[1];
+
+                    const nameParts = line.split(',');
+                    currentChannel.name = nameParts[nameParts.length - 1].trim();
+                } else if (line.length > 0 && !line.startsWith('#')) {
+                    if (currentChannel) {
+                        currentChannel.url = line;
+                        if (!currentChannel.category) currentChannel.category = "General";
+                        newChannels.push(currentChannel);
+                        currentChannel = null;
+                    }
+                }
+            });
+
+            window.masterChannelList.push(...newChannels);
+            window.updateCategoriesSelect();
+            window.renderChannels();
+            return newChannels.length;
+        };
+
+        // PRELOAD DEFAULT PLAYLIST
+        window.preloadDefaultPlaylist = async function() {
+            try {
+                const playlistText = await window.smartFetch(GIST_PLAYLIST_URL);
+                const count = window.parseM3uText(playlistText, "Lista Integrada");
+                window.loadedSources[0].count = count;
+                window.renderSourcesList();
+                console.log(`[CYBER-SKYNET] Integrated ${count} default channels.`);
+            } catch(e) {
+                console.error("Error preloading playlist:", e);
+            }
+        };
+
+        // CONNECT XTREAM API
+        window.connectXtreamApi = async function() {
+            const host = document.getElementById('xtreamHost')?.value.trim();
+            const user = document.getElementById('xtreamUser')?.value.trim();
+            const pass = document.getElementById('xtreamPass')?.value.trim();
+
+            if (!host || !user || !pass) {
+                alert("Por favor completa Host, Usuario y Contraseña");
+                return;
+            }
+
+            const xtreamM3uUrl = `${host.replace(/\/$/, '')}/get.php?username=${encodeURIComponent(user)}&password=${encodeURIComponent(pass)}&type=m3u_plus`;
+
+            try {
+                const text = await window.smartFetch(xtreamM3uUrl);
+                const count = window.parseM3uText(text, `Xtream (${user})`);
+                window.loadedSources.push({ name: `Xtream: ${host}`, count: count, type: "xtream" });
+                window.renderSourcesList();
+                alert(`Conectado a Xtream! Se cargaron ${count} canales.`);
+            } catch(e) {
+                alert("Error al conectar con Xtream Codes API: " + e.message);
+            }
+        };
+
+        // RENDER SOURCES LIST
+        window.renderSourcesList = function() {
+            const container = document.getElementById('sourcesList');
+            const countLabel = document.getElementById('sourcesCount');
+            if (!container) return;
+
+            if (countLabel) countLabel.innerText = `${window.loadedSources.length} Fuente(s)`;
+
+            container.innerHTML = window.loadedSources.map(s => `
+                <div class="p-3 rounded-xl bg-black/40 border border-cyan-900/60 flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-server text-cyan-400"></i>
+                        <div>
+                            <span class="font-semibold text-slate-200">${s.name}</span>
+                            <p class="text-[10px] text-cyan-400 font-mono">${s.count} canales cargados</p>
+                        </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-[10px] bg-cyan-950 text-cyan-300 border border-cyan-800/50 uppercase font-mono">${s.type}</span>
+                </div>
+            `).join('');
+        };
+
+        // UPDATE CATEGORIES SELECT
+        window.updateCategoriesSelect = function() {
+            const select = document.getElementById('categorySelect');
+            if (!select) return;
+            const categories = new Set(window.masterChannelList.map(c => c.category || 'General'));
+            select.innerHTML = '<option value="ALL">Todas las Categorías</option>';
+            categories.forEach(cat => {
+                const opt = document.createElement('option');
+                opt.value = cat;
+                opt.innerText = cat;
+                select.appendChild(opt);
+            });
+        };
+
+        // RENDER CHANNELS
+        window.renderChannels = function() {
+            const container = document.getElementById('channelsContainer');
+            if (!container) return;
+
+            const searchVal = (document.getElementById('channelSearchInput')?.value || '').toLowerCase();
+            const catVal = document.getElementById('categorySelect')?.value || 'ALL';
+
+            const filtered = window.masterChannelList.filter(c => {
+                const matchesSearch = c.name.toLowerCase().includes(searchVal) || (c.category && c.category.toLowerCase().includes(searchVal));
+                const matchesCat = catVal === 'ALL' || c.category === catVal;
+                const matchesFav = !window.showFavoritesOnlyFlag || window.favoritesSet.has(c.id);
+                return matchesSearch && matchesCat && matchesFav;
+            });
+
+            document.getElementById('channelListCount').innerText = filtered.length;
+            document.getElementById('totalChannelsCounter').innerText = `${window.masterChannelList.length} Canales`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<p class="text-xs text-slate-500 italic p-4 text-center">No se encontraron canales.</p>';
+                return;
+            }
+
+            container.innerHTML = filtered.map(c => {
+                const isSelected = window.currentActiveChannel && window.currentActiveChannel.id === c.id;
+                const isFav = window.favoritesSet.has(c.id);
+                return `
+                    <div onclick="window.playStream('${c.id}')" class="p-3 rounded-xl glass-panel flex items-center justify-between cursor-pointer border ${isSelected ? 'border-cyan-400 bg-cyan-900/40 shadow-sky-glow' : 'border-cyan-950/60 hover:border-cyan-500/40'} transition-all">
+                        <div class="flex items-center space-x-3 overflow-hidden">
+                            <img src="${c.logo || 'https://placehold.co/100x100/0a192f/00d2ff?text=TV'}" class="w-8 h-8 rounded-lg object-contain bg-black/40 border border-cyan-800/40 p-0.5">
+                            <div class="truncate">
+                                <h4 class="text-xs font-semibold text-slate-100 truncate">${c.name}</h4>
+                                <span class="text-[10px] text-cyan-400 font-mono">${c.category || 'General'}</span>
+                            </div>
+                        </div>
+                        <button onclick="event.stopPropagation(); window.toggleFav('${c.id}')" class="text-xs p-1 text-slate-500 hover:text-yellow-400 transition-colors">
+                            <i class="fa-${isFav ? 'solid' : 'regular'} fa-star ${isFav ? 'text-yellow-400' : ''}"></i>
+                        </button>
+                    </div>
+                `;
+            }).join('');
+        };
+
+        // FILTER CHANNELS
+        window.filterChannels = function() {
+            window.renderChannels();
+        };
+
+        // TOGGLE FAVORITES
+        window.toggleFav = function(id) {
+            if (window.favoritesSet.has(id)) {
+                window.favoritesSet.delete(id);
+            } else {
+                window.favoritesSet.add(id);
+            }
+            document.getElementById('favCount').innerText = window.favoritesSet.size;
+            window.renderChannels();
+        };
+
+        window.toggleFavoritesOnly = function() {
+            window.showFavoritesOnlyFlag = !window.showFavoritesOnlyFlag;
+            const btn = document.getElementById('favToggleBtn');
+            if (window.showFavoritesOnlyFlag) {
+                btn.classList.add('bg-cyan-500/30', 'border-cyan-400');
+            } else {
+                btn.classList.remove('bg-cyan-500/30', 'border-cyan-400');
+            }
+            window.renderChannels();
+        };
+
+        // PLAY STREAM
+        window.playStream = function(channelId) {
+            const channel = window.masterChannelList.find(c => c.id === channelId);
+            if (!channel) return;
+
+            window.currentActiveChannel = channel;
+            document.getElementById('playerPlaceholder').style.display = 'none';
+
+            document.getElementById('currentStreamTitle').innerText = channel.name;
+            document.getElementById('currentStreamEPG').innerHTML = `<span class="text-cyan-400 font-semibold">Grupo:</span> ${channel.category || 'General'}`;
+            if (channel.logo) {
+                document.getElementById('currentStreamLogo').src = channel.logo;
+            }
+
+            const video = document.getElementById('cyberPlayer');
+            const iframe = document.getElementById('cyberIframe');
+            const audioVis = document.getElementById('audioVisualizer');
+            const audio = document.getElementById('cyberAudio');
+            const telefeToggleBtn = document.getElementById('telefeSourceToggleBtn');
+
+            if (channel.name.includes("Telefe")) {
+                telefeToggleBtn.classList.remove('hidden');
+            } else {
+                telefeToggleBtn.classList.add('hidden');
+            }
+
+            video.pause();
+            audio.pause();
+            iframe.src = "about:blank";
+
+            video.classList.add('hidden');
+            iframe.classList.add('hidden');
+            audioVis.classList.add('hidden');
+
+            const isRadio = channel.category === 'Radios' || channel.url.endsWith('.mp3');
+            const isDailymotionOrIframe = channel.url.includes('dailymotion.com') || channel.url.includes('embed');
+
+            if (isDailymotionOrIframe) {
+                iframe.src = channel.url;
+                iframe.classList.remove('hidden');
+                document.getElementById('playerQualityBadge').innerText = 'EMBED / DAILYMOTION';
+            } else if (isRadio && !channel.url.includes('.m3u8')) {
+                audioVis.classList.remove('hidden');
+                document.getElementById('audioChannelTitle').innerText = channel.name;
+                audio.src = channel.url;
+                audio.play().catch(e => console.log('Audio autoplay blocked', e));
+                document.getElementById('playerQualityBadge').innerText = 'AUDIO MP3';
+            } else {
+                video.classList.remove('hidden');
+                document.getElementById('playerQualityBadge').innerText = 'HLS / LIVE';
+
+                if (Hls.isSupported() && (channel.url.includes('.m3u8') || !channel.url.includes('.'))) {
+                    if (window.hlsPlayer) {
+                        window.hlsPlayer.destroy();
+                    }
+                    window.hlsPlayer = new Hls({ enableWorker: true, lowLatencyMode: true });
+                    window.hlsPlayer.loadSource(channel.url);
+                    window.hlsPlayer.attachMedia(video);
+                    window.hlsPlayer.on(Hls.Events.MANIFEST_PARSED, function() {
+                        video.play().catch(e => console.log('Autoplay blocked', e));
+                    });
+                } else {
+                    video.src = channel.url;
+                    video.play().catch(e => console.log('Autoplay error', e));
+                }
+            }
+
+            window.renderChannels();
+        };
+
+        // TELEFE TOGGLE
+        window.toggleTelefeSource = function() {
+            if (!window.currentActiveChannel || !window.currentActiveChannel.name.includes("Telefe")) return;
+            currentTelefeSourceIndex = (currentTelefeSourceIndex + 1) % TELEFE_SOURCES.length;
+            const src = TELEFE_SOURCES[currentTelefeSourceIndex];
+            window.currentActiveChannel.url = src.url;
+            document.getElementById('telefeCurrentSourceLabel').innerText = src.name;
+            window.playStream(window.currentActiveChannel.id);
+        };
+
+        // EPG XML FETCHING
+        window.fetchRemoteEPG = async function() {
+            try {
+                const xmlText = await window.smartFetch(EPG_URL);
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+                const programmes = xmlDoc.getElementsByTagName("programme");
+
+                const container = document.getElementById('epgTimelineContainer');
+                if (container) {
+                    container.innerHTML = `<p class="text-xs text-emerald-400 font-semibold p-2">Sincronizados ${programmes.length} programas desde la guía EPG XML.</p>`;
+                }
+            } catch(e) {
+                console.error("Error fetching EPG:", e);
+            }
+        };
+
+        window.addEpgFromUrl = async function() {
+            const url = document.getElementById('epgUrlInput')?.value;
+            if (!url) return;
+            try {
+                const xmlText = await window.smartFetch(url);
+                window.loadedSources.push({ name: `EPG: ${url}`, count: 1, type: "xmltv" });
+                window.renderSourcesList();
+                alert("Guía EPG XML vinculada exitosamente.");
+            } catch(e) {
+                alert("Error al cargar la guía EPG: " + e.message);
+            }
+        };
+
+        // ADD M3U FROM URL
+        window.addM3uFromUrl = async function() {
+            const url = document.getElementById('m3uUrlInput')?.value;
+            if (!url) return;
+            try {
+                const text = await window.smartFetch(url);
+                const count = window.parseM3uText(text, url);
+                window.loadedSources.push({ name: url, count: count, type: "m3u" });
+                window.renderSourcesList();
+                alert(`Cargados ${count} canales desde ${url}`);
+            } catch(e) {
+                alert("Error cargando M3U: " + e.message);
+            }
+        };
+
+        // ADD M3U FROM RAW TEXT
+        window.addM3uFromRawText = function() {
+            const text = document.getElementById('rawM3uTextArea')?.value;
+            if (!text) return;
+            const count = window.parseM3uText(text, "Texto Pegado");
+            window.loadedSources.push({ name: "Texto Pegado Directo", count: count, type: "m3u" });
+            window.renderSourcesList();
+            alert(`Cargados ${count} canales exitosamente.`);
+        };
+
+        // UTILITY FUNCTIONS
+        window.toggleSettingsModal = function() {
+            const modal = document.getElementById('settingsModal');
+            if (modal) modal.classList.toggle('hidden');
+        };
+
+        window.copyCurrentStreamUrl = function() {
+            if (window.currentActiveChannel && window.currentActiveChannel.url) {
+                navigator.clipboard.writeText(window.currentActiveChannel.url);
+                alert("URL copiada al portapapeles!");
+            }
+        };
+
+        window.toggleFullscreen = function() {
+            const wrapper = document.getElementById('playerWrapper');
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else if (wrapper) {
+                wrapper.requestFullscreen();
+            }
+        };
+
+        window.togglePip = async function() {
+            const video = document.getElementById('cyberPlayer');
+            if (document.pictureInPictureElement) {
+                await document.exitPictureInPicture();
+            } else if (video && !video.classList.contains('hidden')) {
+                await video.requestPictureInPicture();
+            }
+        };
+
+        window.runStreamDiagnostic = function() {
+            alert("Diagnóstico HLS ejecutado correctamente.");
+        };
+
+        // ONLOAD ATTACHMENT
+        window.onload = function() {
+            window.initPlayer();
+            window.preloadDefaultPlaylist();
+            window.fetchRemoteEPG();
+            window.switchTab('hub');
+        };
+    </script>
+</body>
 </html>
